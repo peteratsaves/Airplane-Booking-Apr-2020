@@ -1,6 +1,7 @@
 
-public class UserMenu extends Flight{
+public class UserMenu {
 	
+
 	protected String type;
 	protected String date;
 	protected String source;
@@ -9,8 +10,11 @@ public class UserMenu extends Flight{
 	protected int adultTic;
 	protected int childTic;
 	
-	public UserMenu(String type, String date, String source, String dest, String airline, int adultTic, int childTic) {
-		super(type, date, source, dest, airline, adultTic, childTic);
+	
+	
+	public static void userMenu() {
+		System.out.println("Please enter the following information to find a flight.");
+		
 	}
 	
 	public Flight generateFlight() {
