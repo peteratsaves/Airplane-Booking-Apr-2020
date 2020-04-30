@@ -24,6 +24,8 @@ public class AdminMenu extends Flight {
 	
     public void addPoints(Account acc) {
 	//adds points to user's account if flight is cancelled
+	int currentPoints = acc.getPoints(); // Gets their current points
+	acc.setPoints(currentPoints + 50); // Adds 50 points to account
     }
 	
     public void blacklist(Account user) {
@@ -32,6 +34,8 @@ public class AdminMenu extends Flight {
 	
     public void giftPoints(Account user, int points) {
 	//adds inputted points to inputted user's account
+	int currentPoints = acc.getPoints();
+	acc.setPoints(currentPoints + points); // Adds inputted amount of points to account
     }
 	
     public void reviewView() {
