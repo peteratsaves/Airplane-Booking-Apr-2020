@@ -1,6 +1,7 @@
 // Final Project Part 2: Airline Ticket Booking System
 // @authors Cooper White, Peter Atsaves, Tim Leahy, Prathik Gowda
 // Last edited 5/01/20
+// AdminMenu class: Methods available to Admin users only
 
 public class AdminMenu extends Flight {
 	
