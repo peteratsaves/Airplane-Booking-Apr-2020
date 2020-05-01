@@ -1,3 +1,7 @@
+// Final Project Part 2: Airline Ticket Booking System
+// @authors Cooper White, Peter Atsaves, Tim Leahy, Prathik Gowda
+// Last edited 5/01/20
+// UserMenu class: Methods for menu for normal users (without admin access)
 
 public class UserMenu {
 	

@@ -1,3 +1,8 @@
+// Final Project Part 2: Airline Ticket Booking System
+// @authors Cooper White, Peter Atsaves, Tim Leahy, Prathik Gowda
+// Last edited 5/01/20
+// Flight Class: Makes a Flight object and a flights data structure to keep track of characteristics of flights
+
 import java.util.ArrayList;
 
 public class Flight {
