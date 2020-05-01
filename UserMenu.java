@@ -18,15 +18,25 @@ public class UserMenu {
 	}
 	
 	public Flight generateFlight() {
-		//takes input from UserMenu and generates a new flight to be compared to existing flights
+		Scanner obj = new Scanner(System.in);
+		String info = obj.nextLine();
+		for(int i=0; i<flights.length; i++){
+			if (flights.gets(i)==info){
+				return flights.get(i);
+			}
+		}
+f		//takes input from UserMenu and generates a new flight to be compared to existing flights
 		return null;
 	}
 	
 	public void search(Flight userFlight) {
 		//compares generated flight to existing flight
+		
 	}
 	
 	public void book() {
+		Flight x = generateFlight();
+		flights.add(x);
 		//adds chosen flight to users Account
 	}
 	
@@ -35,6 +45,13 @@ public class UserMenu {
 	}
 	
 	public void sorting() {
+		for(int i=0; i<flights.length; i++){
+			int x = i;
+			while (flights.gets(x+1).date<flights.get(x).date{
+				Flight temp = flights.get(x);
+				flights(x) = flights.get(x+1);
+				flights(x+1) = temp;
+				x--;
 		//displays existing flights in ascending or descending order based off of user input
 	}
 	
