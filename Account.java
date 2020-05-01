@@ -23,6 +23,14 @@ public class Account {
     protected int points;
     protected static String accName;
     public static File file = new File("account.txt");
+
+    public int getPoints() {
+	return points;
+    }
+
+    public void setPoints(int pts) {
+	this.points = pts;
+    }
 	
     public Account(String pw, String un, int points, ArrayList<String> blockedInput) {
 	this.pwInput = pw;
