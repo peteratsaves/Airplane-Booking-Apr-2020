@@ -33,6 +33,7 @@ public class AdminMenu extends Flight {
 	
     public void blacklist(Account user) {
 	//restricts a user from using logged in airline
+	acc.addBlocked(airline);
     }
 	
     public void giftPoints(Account user, int points) {
