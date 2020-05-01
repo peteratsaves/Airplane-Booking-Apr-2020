@@ -11,7 +11,6 @@ public class AdminMenu extends Flight {
 	
     public AdminMenu(String type, String date, String source, String dest, String airline, int adultTic, int childTic) {
 	super(type, date, source, dest, airline, adultTic, childTic);
-		
     }
 	
     public void addFlight(Flight addF) { // Adds flight addF to flights
