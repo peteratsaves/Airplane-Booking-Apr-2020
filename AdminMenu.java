@@ -25,21 +25,21 @@ public class AdminMenu extends Flight {
 	removeFlightSuper(removeF); // Uses removeFlightSuper method in Flight superclass
     }
 	
-    public void addPoints(Account acc) {
+    public void addPoints(Account user) {
 	//adds points to user's account if flight is cancelled
-	int currentPoints = acc.getPoints(); // Gets their current points
-	acc.setPoints(currentPoints + 50); // Adds 50 points to account
+	int currentPoints = user.getPoints(); // Gets their current points
+	user.setPoints(currentPoints + 50); // Adds 50 points to account
     }
 	
     public void blacklist(Account user) {
 	//restricts a user from using logged in airline
-	acc.addBlocked(airline);
+	user.addBlocked(airline);
     }
 	
     public void giftPoints(Account user, int points) {
 	//adds inputted points to inputted user's account
-	int currentPoints = acc.getPoints();
-	acc.setPoints(currentPoints + points); // Adds inputted amount of points to account
+	int currentPoints = user.getPoints();
+	user.setPoints(currentPoints + points); // Adds inputted amount of points to account
     }
 	
     public void reviewView() {
