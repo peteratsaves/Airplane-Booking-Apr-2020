@@ -34,18 +34,24 @@ public class UserMenu {
     }
 	
     public void search(Flight userFlight) {
+	    
 	//compares generated flight to existing flight
-		
+	   
     }
 	
     public void book() {
 	Flight x = generateFlight();
-	flights.add(x);
+	addFlightSuper(x);
 	//adds chosen flight to users Account
     }
 	
     public void filter(Flight userFlight) {
-	//displays flights matching selected parameters of generated flight
+	    for(int i=0; i<flights.length; i++) {
+	    if (Flight.type == type && Flight.dest == dest && Flight.source == source && Flight.date == date){
+		    System.out.println(userFlight.get(i);
+	    }
+	}     
+	//displays flights matching selected parameters of generated flight		      
     }
 	
     public void sorting() {
@@ -56,9 +62,13 @@ public class UserMenu {
 		flights(x) = flights.get(x+1);
 		flights(x+1) = temp;
 		x--;
-		//displays existing flights in ascending or descending order based off of user input
+		
 	    }
 	}
+	    for (int x = 0; x<flights.length; i++){
+		    System.out.println(flights.get(x));
+	    }
+	    //displays existing flights in ascending or descending order based off of user input
     }
 
     public void reviewCreate() {
