@@ -34,7 +34,9 @@ public class UserMenu {
     }
 	
     public void search(Flight userFlight) {
-	    
+	    for(int i=0; i<super.Flight.length; i++) {
+		    System.out.println(Flight.get(i));
+	    }
 	//compares generated flight to existing flight
 	   
     }
