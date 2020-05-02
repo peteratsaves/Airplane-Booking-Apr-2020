@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Account {
+public class Account extends Flight {
 
     protected static ArrayList<Account> userCreds = new ArrayList<>();
     protected static ArrayList<Account> adminCreds = new ArrayList<>();
