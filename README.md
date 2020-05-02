@@ -5,7 +5,7 @@ This is Group #5's Airline Booking System. Our team members are Cooper White, Pe
 ### Instructions:
 
 1. To login to the system, answer whether or not you have an existing account by typing 'Y' or 'N'.
-2. both options will prompt you for a username and passowrd
+2. both options will prompt you for a username and passowrd ( Admin username: DeltaAirlines | Admin passoword: flydelta )
   -if the credentials are for a user, the program will start up the user menu
   -if the credentials are for an admin, the program will start up the admin menu
 
