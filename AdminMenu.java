@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class AdminMenu extends Flight {
@@ -10,13 +12,17 @@ public class AdminMenu extends Flight {
     protected static int adultTic;
     protected static int childTic;
     protected int cancelled;
+    protected static int price;
+    public static ArrayList<Integer> seating = new ArrayList<>();
+    static Random random = new Random();
 	
     public AdminMenu() {
     	
     }
     
-    public AdminMenu(String type, String date, String source, String dest, String airline, int adultTic, int childTic, int cancelled) {
-    	super(type, date, source, dest, airline, adultTic, childTic, cancelled);
+    public AdminMenu(String type, String date, String source, String dest, String airline, int adultTic, int childTic, int cancelled, int price) {
+    	super(type, date, source, dest, airline, adultTic, childTic, cancelled, price);
+    	this.seating = seating;
     }
     
     public static void adminMenu() {
@@ -37,7 +43,8 @@ public class AdminMenu extends Flight {
    		 	dest = in.next();
    		 	adultTic = in.nextInt();
    		 	childTic = in.nextInt();
-   		 	Flight f = new Flight(type, date, source, dest, airline, adultTic, childTic, 0);
+   		 	price = in.nextInt();
+   		 	Flight f = new Flight(type, date, source, dest, airline, adultTic, childTic, 0, price);
    		 	removeFlight(f);
    		 	adminMenu();
     	}
@@ -50,7 +57,8 @@ public class AdminMenu extends Flight {
    		 	dest = in.next();
    		 	adultTic = in.nextInt();
    		 	childTic = in.nextInt();
-   		 	Flight f = new Flight(type, date, source, dest, airline, adultTic, childTic, 0);
+   		 	price = in.nextInt();
+   		 	Flight f = new Flight(type, date, source, dest, airline, adultTic, childTic, 0, price);
    		 	cancelFlight(f);
    		 	adminMenu();
     	}
@@ -63,7 +71,10 @@ public class AdminMenu extends Flight {
     		adminMenu();
     	}
     	if(input.equals("b")) {
-    		
+    		System.out.println("Enter user to be blacklisted: ");
+    		String user = menu.next();
+    		blacklist(user);
+    		adminMenu();
     	}
     	if(input.equals("logout")) {
     		return;
@@ -71,6 +82,7 @@ public class AdminMenu extends Flight {
     }
 	
     public static void addFlight() { // Adds flight addF to flights
+    	
     	addFlightSuper(); // Uses addFlightSuper method in Flight superclass
     }
 	
@@ -89,7 +101,7 @@ public class AdminMenu extends Flight {
     	}
     }
 	
-    public void blacklist(String user) {
+    public static void blacklist(String user) {
 	//restricts a user from using logged in airline
     	for(Account acc : userCreds) {
     		if(acc.unInput.equals(user)) {
