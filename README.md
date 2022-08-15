@@ -2,6 +2,8 @@
 
 This is Group #5's Airline Booking System. Our team members are Cooper White, Peter Atsaves, Tim Leahy, and Prathik Gowda.
 
+We utilized Java to design and implement a working software system to simulate airline ticketing. Utilized Java to design and implement a working software system to simulate airline ticketing. Created a menu that allows users to search for flights based on parameters like destination, number of tickets, airline, and flight type, which the system then generated available options for users to select and book a flight. Utilized Java to design and implement a working software system to simulate airline ticketing. Utilized Java to design and implement a working software system to simulate airline ticketing. Created a menu that allows users to search for flights based on parameters like destination, number of tickets, airline, and flight type, which the system then generated available options for users to select and book a flight. 
+
 ### Instructions:
 
 1. To login to the system, answer whether or not you have an existing account by typing 'Y' or 'N'.
